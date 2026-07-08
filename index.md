@@ -7,7 +7,7 @@ title: Home
   <p class="eyebrow">Astronomy · Cosmology · Scientific Machine Learning</p>
   <h1>Yigon Kim</h1>
   <p class="lead">
-    Ph.D. student in Astronomy at Seoul National University, working on cosmology,
+    Ph.D. student in Seoul National University, working on cosmology,
     dark matter, numerical simulations, and machine-learning methods for astrophysics.
   </p>
 </section>
