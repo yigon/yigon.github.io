@@ -20,7 +20,7 @@ title: Research
 
 <div class="card-grid">
   <article class="research-card">
-    <img src="{{ '/assets/img/clust-orig_orig.png' | relative_url }}" alt="Galaxy cluster and large-scale structure illustration">
+    <img src="{{ '/assets/img/orangepie-orig.jpg' | relative_url }}" alt="Galaxy cluster and large-scale structure illustration">
     <div>
       <h3>Large-scale structure</h3>
       <p>Cosmic structure formation and galaxy clustering across large volumes.</p>
