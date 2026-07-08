@@ -5,7 +5,7 @@ title: Research
 
 # Research
 
-<p class="updated">Updated on: 10 March 2026.</p>
+<p class="updated">Updated on: July 2026.</p>
 
 ## Research fields
 
@@ -28,7 +28,7 @@ title: Research
   </article>
 
   <article class="research-card placeholder-card">
-    <div class="placeholder-image">DM</div>
+    <img src="{{ '/assets/img/clust-orig_orig.png' | relative_url }}" alt="Dark matter halos">
     <div>
       <h3>Dark matter halo</h3>
       <p>Dark matter halo properties, substructure, and their connection to observables.</p>
