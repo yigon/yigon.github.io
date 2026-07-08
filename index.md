@@ -42,4 +42,4 @@ title: Home
 - E-mail: `yigon at outlook.com` · `yigon28 at snu.ac.kr`
 - Instagram: [link](https://www.instagram.com/kimi_goni)
 - Blog: [link](https://blog.naver.com/note_by_yigon)
-- Research profiles: [NASA ADS]([https://ui.adsabs.harvard.edu/](https://ui.adsabs.harvard.edu/search/p_=0&q=orcid%3A0000-0001-5100-4886&sort=date%20desc%2C%20bibcode%20desc)) · [arXiv]([https://arxiv.org/](https://arxiv.org/search/astro-ph?query=Kim%2C+Yigon&searchtype=author&abstracts=show&order=-announced_date_first&size=50))
+- Research profiles: [NASA ADS](https://ui.adsabs.harvard.edu/search/p_=0&q=orcid%3A0000-0001-5100-4886&sort=date%20desc%2C%20bibcode%20desc) · [arXiv](https://arxiv.org/search/astro-ph?query=Kim%2C+Yigon&searchtype=author&abstracts=show&order=-announced_date_first&size=50)
