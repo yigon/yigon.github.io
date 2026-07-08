@@ -1,0 +1,26 @@
+title: "Yigon Kim"
+name: "KIM, Yigon"
+email: "yigon28@snu.ac.kr"
+description: >-
+  Personal academic homepage of Yigon Kim, Ph.D. student in Astronomy at Seoul National University.
+url: "https://ykim28.github.io"
+baseurl: ""
+lang: "en"
+timezone: "Asia/Seoul"
+
+markdown: kramdown
+permalink: pretty
+
+nav:
+  - title: "Home"
+    url: "/"
+  - title: "Bio"
+    url: "/bio/"
+  - title: "Research"
+    url: "/research/"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
