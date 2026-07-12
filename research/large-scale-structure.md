@@ -2,6 +2,7 @@
 layout: default
 title: The Large Scale Structure
 permalink: /research/large-scale-structure/
+math: true
 ---
 
 # The Large Scale Structure

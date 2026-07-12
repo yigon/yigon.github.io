@@ -2,6 +2,7 @@
 layout: default
 title: Dark Matter Halo
 permalink: /research/dark-matter-halo/
+math: true
 ---
 
 # Dark Matter Halo
@@ -10,8 +11,8 @@ permalink: /research/dark-matter-halo/
 
 2 papers published:
 
-- **Astrophysical Journal**, August 2022. [arXiv](https://arxiv.org/abs/2207.02389)
-- **Astronomy & Astrophysics**, June 2025.
+- **Astrophysical Journal**, August 2022. [ADS](https://ui.adsabs.harvard.edu/abs/2022ApJ...935...71K/abstract) / [arXiv](https://arxiv.org/abs/2207.02389)
+- **Astronomy & Astrophysics**, June 2025. [ADS](https://ui.adsabs.harvard.edu/abs/2025A%26A...700A.149K/abstract) / [arXiv](https://arxiv.org/abs/2506.21827)
 
 <img class="wide-image" src="{{ '/assets/img/research/halo-cluster.png' | relative_url }}" alt="Dark matter halo in a galaxy cluster">
 

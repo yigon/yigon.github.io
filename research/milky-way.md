@@ -2,6 +2,7 @@
 layout: default
 title: The Milky Way
 permalink: /research/milky-way/
+math: true
 ---
 
 # The Milky Way
