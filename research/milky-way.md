@@ -8,11 +8,11 @@ permalink: /research/milky-way/
 
 **Galactic dynamics & Machine Learning**
 
-Working on draft.
+Submitted to MNRAS.
 
 <img class="wide-image" src="{{ '/assets/img/research/mw-dm-reconstruction.jpg' | relative_url }}" alt="Machine-learning reconstruction of dark matter distribution">
 
-<img class="wide-image" src="{{ '/assets/img/research/mw-density-profile.png' | relative_url }}" alt="Dark matter density profile around the Milky Way">
+<img class="wide-image" src="{{ '/assets/img/research/mw-density-profile.jpg' | relative_url }}" alt="Dark matter density profile around the Milky Way">
 
 Dark matter is a key ingredient of the standard \(\Lambda\)CDM cosmological model, contributing much more mass-energy than baryonic matter. The Milky Way, like other galaxies, resides inside an extended dark matter halo whose mass exceeds that of its luminous components and strongly influences Galactic dynamics.
 
