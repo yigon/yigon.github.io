@@ -22,6 +22,6 @@ Many observational studies have attempted to identify a homogeneity scale, namel
 
 In this work, we tested homogeneity using the SDSS-III BOSS galaxy catalogue, simulated dark matter halo catalogues from Horizon Run 3, and theoretically derived point distributions from the linear matter power spectrum assuming Planck 2018 cosmology. We adopted the Poisson distribution as the reference criterion for homogeneity at a given scale.
 
-No homogeneity threshold was found up to scales of 300 \(h^{-1}\,\mathrm{Mpc}\). Rather than challenging modern cosmology, this result supports the interpretation that the observed matter distribution can remain highly inhomogeneous while being consistent with a cosmological model whose background geometry obeys the cosmological principle.
+No homogeneity threshold was found up to scales of 300Mpc/h. Rather than challenging modern cosmology, this result supports the interpretation that the observed matter distribution can remain highly inhomogeneous while being consistent with a cosmological model whose background geometry obeys the cosmological principle.
 
 [Back to Research]({{ '/research/' | relative_url }})
