@@ -145,6 +145,11 @@ button, input, textarea, select { font: inherit; }
 .site-main .profile-layout { display: grid; grid-template-columns: 1fr minmax(180px, 35%); gap: 2rem; align-items: start; }
 .site-main .profile-layout figure { margin: 0; }
 
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.25rem 3rem;
+}
 .site-footer { border-top: 1px solid var(--hairline); }
 .site-footer__inner {
   display: flex;
@@ -168,6 +173,9 @@ button, input, textarea, select { font: inherit; }
   .site-main { padding: 62px 0 90px; }
   .site-main .profile-layout { grid-template-columns: 1fr; }
   .site-main .profile-layout figure { max-width: 320px; }
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 420px) {
   body { font-size: 18px; }
