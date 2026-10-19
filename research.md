@@ -11,9 +11,10 @@ Interested in:
 - Large-scale structure of the Universe
 - Cosmological simulations
 - Dark matter substructures
+- Galactic dynamics
 - Deep learning
 
-Updated on: 10 March 2026.
+Updated on: 19 October 2026.
 
 ## Thesis
 
