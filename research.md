@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Research
+hero_title: Research fields
+wide_layout: true
 permalink: /research/
 ---
-
-# Research fields
 
 Interested in:
 
