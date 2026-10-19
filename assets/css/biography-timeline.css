@@ -1,0 +1,66 @@
+/* Biography / Timeline
+ * Append this block to assets/css/monotone.css.
+ * It uses the same --sans font as Home's .eyebrow tagline.
+ */
+
+.site-main .bio-list {
+  display: grid;
+  gap: clamp(1.9rem, 3.2vw, 2.6rem);
+  margin: 1.5rem 0 3rem;
+}
+
+.site-main .bio-entry {
+  display: grid;
+  grid-template-columns: 156px minmax(0, 1fr);
+  column-gap: clamp(1.2rem, 2.7vw, 2.4rem);
+  align-items: start;
+}
+
+/* Small sans-serif date: same family/weight as the Home interest line. */
+.site-main .bio-entry__date {
+  padding-top: .36rem;
+  color: var(--muted, #727272);
+  font-family: var(--sans, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: 10.5px;
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: .045em;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.site-main .bio-entry__content {
+  min-width: 0;
+}
+
+/* A title and its details are treated as a single visual unit. */
+.site-main .bio-entry__title {
+  margin: 0;
+  color: var(--ink, #191919);
+  font-family: var(--serif, "EB Garamond", Garamond, Georgia, serif);
+  font-size: 1.08em;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.site-main .bio-entry__details {
+  margin: .26rem 0 0;
+  color: var(--body-ink, #303030);
+  font-family: var(--serif, "EB Garamond", Garamond, Georgia, serif);
+  font-size: .96em;
+  line-height: 1.45;
+}
+
+@media (max-width: 700px) {
+  .site-main .bio-list {
+    gap: 1.9rem;
+  }
+  .site-main .bio-entry {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: .28rem;
+  }
+  .site-main .bio-entry__date {
+    padding-top: 0;
+    white-space: normal;
+  }
+}
