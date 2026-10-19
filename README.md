@@ -1,44 +1,30 @@
-# Full-width Milky Way hero + gray subsection rules
+# Biography typography and spacing update
 
-These files update the earlier monotone Jekyll theme for yigon.github.io.
+This is an **additive** update to the monotone Jekyll theme supplied earlier.
+The current GitHub `bio.md` was not accessible during this run, so this package does **not** overwrite your actual biography content.
 
 ## Apply
 
-1. In your repository, copy `_layouts/default.html` and `assets/css/monotone.css` to the same locations. Keep backups of your own edits before replacing anything. The other layout files are included for completeness, but unchanged.
-2. Your uploaded image stays in `/assets/img/220702_MW.jpg`; you do **not** need to copy it into this package. The CSS uses `../img/220702_MW.jpg` because `monotone.css` lives in `/assets/css/`.
-3. In `index.md`, `bio.md`, and `research.md`, **remove the existing leading Markdown H1** (`# ...`) if present. The new layout already renders the page's main title in the photo banner, so keeping both would duplicate the title. Do not remove any H2 subsections (`## ...`).
-4. Give each Markdown page a `title` in YAML front matter (the Home banner uses `site.title` by default). To override any banner title, set `hero_title: "Your heading"`.
-5. Push the updated files to your GitHub Pages repository.
+1. Append the complete contents of `bio-timeline-additions.css` to the **end** of `assets/css/monotone.css` in your repository. Do not replace your existing stylesheet; doing so could remove your recent hero-title/subtitle edits.
+2. In your existing `bio.md`, wrap each date/content item using the structure in `bio-markup-example.md` (`bio-list`, `bio-entry`, `bio-entry__date`, `bio-entry__content`). Keep the facts and original text from your site.
+3. Keep the `##` headings of your existing sections. The thin grey divider rule supplied previously will continue to separate major sections.
+4. No changes to `_layouts/default.html`, `index.md`, or `research.md` are required.
 
-Examples of front matter:
+## Visual behavior
 
-    ---
-    layout: default
-    title: Research
-    hero_title: Research
-    wide_layout: true
-    ---
+- Date uses the same sans-serif family (`--sans`) and weight as the Home eyebrow (the label type used for “Astronomy · Cosmology · Scientific Machine Learning”). At 10.5px it is slightly smaller than the previous 11px eyebrow. On mobile it is 11px for clarity.
+- A single entry is one row: date on the left, title/details on the right; on a narrow screen the date stacks above the content.
+- Tight spacing between title and description; 1.9–2.6rem between separate dated entries.
+- No borders on individual entries; section-level grey rules from the existing theme remain.
 
-    ---
-    layout: default
-    title: Bio
-    ---
+## Capitalization convention
 
-    ---
-    layout: home
-    title: Home
-    hero_title: Yigon Kim
-    ---
+- **Section headings:** Title Case (`Education`, `Research Experience`, `Academic Activities`).
+- **Date labels:** `Mar 2024 – Present`, `Sep 2022`, consistent abbreviated English months with initial capital.
+- **Degrees and proper names:** official spellings (`Ph.D.`, `Seoul National University`, `Gaia DR3`).
+- **Descriptions:** sentence case (`Research on Galactic structure and dynamics` -> `Research on galactic structure and dynamics`).
+- CSS does not change text case automatically: update existing strings in `bio.md` where appropriate.
 
-## How it works
+## HTML notes
 
-- The common image banner is **outside** the content-width container, so it spans 100% of the viewport. The title aligns with the site's usual margins.
-- `background-size: cover` crops horizontally or vertically as needed. Adjust `background-position: center 53%` to move the crop up/down, and `.page-hero` min-height to change banner height.
-- The dark overlay protects white title legibility on a bright photograph.
-- Thin gray dividers appear **before the second and later top-level H2 headings**, while `.research-card h2` remains exempt to avoid double lines. Adjacent `<section>` blocks also get separators.
-- Desktop research Grid is three columns, tablet two, mobile one (matching your prior request); feel free to keep your own `research-grid` style if you've already customized it.
-- `hide_hero: true` in front matter disables the banner for a page if desired.
-
-## Caution
-
-I could not fetch the latest GitHub repository files for a line-by-line compatibility audit. These files are based on the **monotone theme generated earlier in this conversation**, not on a verified copy of your current GitHub commit. Merge changes if you already made additional CSS, front matter, or layout edits. A standalone `hero-and-divider-additions.css` is supplied if you want to append only the new CSS.
+Use plain HTML inside Jekyll Markdown so each date and its content are structurally grouped. The sample has `<article>` and `<time>`-styled elements, but they are just presentational; the placeholders are not intended to replace your actual history. You may add `datetime="2024-03"` for single dates; omit `datetime` for ranges since HTML `<time datetime>` does not support a free-form date range.

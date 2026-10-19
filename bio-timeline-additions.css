@@ -1,0 +1,66 @@
+/* Biography timeline — append to assets/css/monotone.css.
+   Matches the sans-serif eyebrow styling used by the Home tagline.
+   Does not affect Research cards or the general page hero. */
+
+.site-main .bio-list {
+  display: grid;
+  gap: clamp(1.9rem, 3.3vw, 2.6rem);
+  margin: 1.55rem 0 3rem;
+}
+
+.site-main .bio-entry {
+  display: grid;
+  grid-template-columns: minmax(112px, 148px) minmax(0, 1fr);
+  gap: .6rem clamp(1.4rem, 3.1vw, 2.7rem);
+  align-items: start;
+}
+
+/* Font family/weight follow the Home tagline (.eyebrow): --sans, 500.
+   Slightly smaller and less widely spaced; capitalization is controlled in bio.md. */
+.site-main .bio-entry__date {
+  display: block;
+  padding-top: .34rem;
+  font-family: var(--sans, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: 10.5px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: .045em;
+  color: var(--muted, #727272);
+  text-transform: none;
+  white-space: nowrap;
+}
+
+.site-main .bio-entry__content {
+  min-width: 0;
+}
+.site-main .bio-entry__title {
+  display: block;
+  margin: 0;
+  font-family: var(--serif, Garamond, Georgia, serif);
+  font-size: 1.13em;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--ink, #191919);
+}
+.site-main .bio-entry__details {
+  margin: .28rem 0 0;
+  font-family: var(--serif, Garamond, Georgia, serif);
+  font-size: .97em;
+  line-height: 1.5;
+  color: var(--body-ink, #303030);
+}
+.site-main .bio-entry__details:last-child { margin-bottom: 0; }
+
+/* Preserve thin rules between major h2 sections from the existing theme.
+   Dates and entry contents do not receive individual dividing lines. */
+@media (max-width: 700px) {
+  .site-main .bio-list { gap: 1.75rem; }
+  .site-main .bio-entry {
+    grid-template-columns: minmax(0, 1fr);
+    gap: .23rem;
+  }
+  .site-main .bio-entry__date {
+    padding-top: 0;
+    font-size: 11px;
+  }
+}
