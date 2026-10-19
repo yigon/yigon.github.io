@@ -349,3 +349,59 @@ button, input, textarea, select { font: inherit; }
 .site-main .bio-entry__details {
   margin: 0.25rem 0 0;
 }
+
+/* skillsets-bio-list:start
+ * Research → Skillsets: typography-led layout inspired by the Biography timeline.
+ * Append to assets/css/monotone.css (the same file as the Biography styling).
+ */
+.site-main .skillsets-list {
+  display: grid;
+  gap: clamp(2.1rem, 3.6vw, 2.9rem);
+  margin: 2rem 0 3.4rem;
+  max-width: 920px;
+}
+
+.site-main .skillsets-entry {
+  display: grid;
+  grid-template-columns: minmax(165px, 225px) minmax(0, 1fr);
+  column-gap: clamp(1.6rem, 3.5vw, 3.2rem);
+  align-items: start;
+}
+
+.site-main .skillsets-entry__label {
+  margin: 0;
+  padding-top: .2rem;
+  font-family: var(--sans, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.55;
+  letter-spacing: .025em;
+  color: var(--muted, #727272);
+}
+
+.site-main .skillsets-entry__items {
+  margin: 0;
+  padding-left: 1.12em;
+  font-family: var(--serif, "EB Garamond", Garamond, Georgia, serif);
+  font-size: clamp(1.12rem, 1.6vw, 1.26rem);
+  font-weight: 400;
+  line-height: 1.48;
+  color: var(--body-ink, #303030);
+}
+
+.site-main .skillsets-entry__items li {
+  margin: 0 0 .27rem;
+  padding-left: .16rem;
+}
+.site-main .skillsets-entry__items li:last-child { margin-bottom: 0; }
+.site-main .skillsets-entry__items li::marker { color: #999; }
+
+@media (max-width: 700px) {
+  .site-main .skillsets-list { gap: 2rem; }
+  .site-main .skillsets-entry {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: .6rem;
+  }
+  .site-main .skillsets-entry__label { padding-top: 0; }
+}
+/* skillsets-bio-list:end */
