@@ -18,7 +18,7 @@ title: Bio
   </div>
   <div class="timeline-item">
     <div class="timeline-date">2024.03 – present</div>
-    <div><strong>Ph.D.</strong> · Seoul National University, Major in Astronomy, ExgalCos team</div>
+    <div><strong>Ph.D.</strong> · Seoul National University, Major in Astronomy, ExgalCos Team</div>
   </div>
 </div>
 
@@ -27,7 +27,7 @@ title: Bio
 <div class="timeline">
   <div class="timeline-item">
     <div class="timeline-date">2017.09 – 2019.02</div>
-    <div>Undergraduate intern · KNU cosmology team</div>
+    <div>Undergraduate intern · KNU Cosmology Team</div>
   </div>
   <div class="timeline-item">
     <div class="timeline-date">2020.09 – 2020.10</div>
