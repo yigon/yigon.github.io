@@ -350,6 +350,39 @@ button, input, textarea, select { font: inherit; }
 }
 /* skillsets-bio-list:end */
 
+/* Biography: mobile layout */
+@media (max-width: 700px) {
+  .site-main .bio-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .site-main .bio-entry__date {
+    margin-bottom: 0.3rem;
+    padding: 0;
+  }
+
+  .site-main .bio-entry__content {
+    width: 100%;
+  }
+
+  .site-main .bio-entry__title {
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .site-main .bio-entry__details {
+    margin-top: 0.2rem;
+    line-height: 1.5;
+  }
+
+  /* Margin between items */
+  .site-main .bio-list {
+    gap: 2rem;
+  }
+}
+
 /* CV download link */
 .cv-download {
   margin: 1.5rem 0 3rem;
