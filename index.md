@@ -7,10 +7,6 @@ hero_subtitle: Yigon's homepage
 
 <section class="hero">
   <p class="eyebrow">Astronomy · Cosmology · Scientific Machine Learning</p>
-  <p class="lead">
-    Ph.D. student in Seoul National University, working on cosmology,
-    dark matter, numerical simulations, and machine-learning methods for astrophysics.
-  </p>
 </section>
 
 ## Information
@@ -25,8 +21,8 @@ hero_subtitle: Yigon's homepage
     <span>Nov. 1996</span>
   </div>
   <div class="info-card">
-    <strong>Location</strong>
-    <span>Seoul, Republic of Korea</span>
+    <strong>Affiliation</strong>
+    <span>Seoul National University, Republic of Korea</span>
   </div>
   <div class="info-card">
     <strong>Position</strong>
