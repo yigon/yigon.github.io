@@ -11,16 +11,9 @@ timezone: "Asia/Seoul"
 markdown: kramdown
 permalink: pretty
 
-nav:
-  - title: "Home"
-    url: "/"
-  - title: "Bio"
-    url: "/bio/"
-  - title: "Research"
-    url: "/research/"
-
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
   - vendor
+  - backup

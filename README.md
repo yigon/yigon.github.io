@@ -1,23 +1,45 @@
-# Research Skillsets — Biography-style list
+# Yigon Kim's homepage
 
-This change replaces the **image only in Research > Skillsets** with a readable, four-category text list. It leaves the other research content unchanged and adds no illustration, borders, or rounded cards. Dates, qualifications, and other Bio page content are not modified.
+Personal academic website built with Jekyll and GitHub Pages.
 
-## Apply to the existing Jekyll website
+## Sources
 
-1. Download and extract this archive.
-2. From a terminal, run:
-   `python3 apply_skillsets.py /path/to/yigon.github.io --dry-run`
-3. Check the proposed diff; then run without `--dry-run`.
-4. Commit the changes to `research.md` and `assets/css/monotone.css` as normal.
+- `index.md`, `bio.md`, and `research.md`: Home, Bio, and Research pages.
+- `research/*.md`: the three research detail pages.
+- `_layouts/default.html`: shared layout, navigation, page banner, and footer.
+- `assets/css/monotone.css`: shared stylesheet, including biography and skillsets styles.
+- `assets/img/220702_MW.jpg`: page banner image.
+- `assets/img/research/`: images referenced by the research pages.
+- `_config.yml`: site metadata, URL settings, and build exclusions.
+- `Gemfile` and `Gemfile.lock`: existing Ruby dependencies.
 
-Alternatively, replace the content of the existing `## Skillsets` section in `research.md` with `skillsets-section.md`, and append the contents of `skillsets.css` to `assets/css/monotone.css`.
+Edit these sources directly. Generated output, design examples, and previously
+applied setup scripts are not needed to maintain the current pages.
 
-The script creates timestamped `.bak-...` backups for each changed file, validates that exactly one `## Skillsets` heading exists, and can be rerun without duplicating the CSS block. It does not make any changes to the remote GitHub repository.
+## Local review
 
-## Design
-- Desktop: category at left in the same small sans-serif font family as the Bio dates; details as a clear list in the site's regular serif font at right.
-- Mobile (700px and below): category above its details.
-- Four groups with generous vertical spacing; no cards or decorative graphics.
-- Existing gray section rules are unaffected.
+To review changes without building the site:
 
-The repository's latest main-branch files could not be downloaded in this environment; the patch uses the known heading (`## Skillsets`) and only changes that section. It refuses to edit if that heading cannot be found.
+```sh
+git diff --check
+git diff
+```
+
+To build manually with the existing Ruby/Bundler environment:
+
+```sh
+bundle exec jekyll build --destination /tmp/yigon-homepage-preview
+```
+
+## Backup
+
+`backup/before-cleanup-20261019-154841/` contains the complete repository snapshot
+from before the cleanup, including hidden files, Git history, generated output,
+and previous backups. `repository.tar.gz` preserves the original directory
+structure; `SOURCE_SHA256SUMS` lists the original file checksums, and
+`ARCHIVE_SHA256SUMS` records the archive checksum. `CLEANUP.txt` lists the cleanup
+changes.
+
+The backup is local and excluded from Git and Jekyll output. To inspect or recover
+the original files, extract the archive into a separate empty directory. Avoid
+extracting its `.git` directory over the working repository.
