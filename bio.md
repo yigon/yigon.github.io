@@ -5,7 +5,7 @@ hero_title: Biography
 ---
 
 <div class="cv-download">
-  <a href="{{ '/assets/pdf/Yigon_Kim_CV.pdf' | relative_url }}"
+  <a href="{{ '/assets/pdf/Yigon_Kim_Academic_CV.pdf' | relative_url }}"
      download="Yigon_Kim_CV.pdf"
      class="cv-download__link">
     Download CV (PDF) ↗
