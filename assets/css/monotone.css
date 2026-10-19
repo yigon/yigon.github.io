@@ -310,4 +310,42 @@ button, input, textarea, select { font: inherit; }
     padding-top: 1.75rem;
     margin-top: 2.3rem;
   }
+    .site-main .bio-entry {
+    grid-template-columns: 1fr;
+    row-gap: 0.3rem;
+  }
+}
+
+/* Biography timeline */
+.site-main .bio-list {
+  display: grid;
+  gap: 2.2rem;
+  margin: 1.5rem 0 3rem;
+}
+
+.site-main .bio-entry {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  column-gap: 2rem;
+  align-items: start;
+}
+
+.site-main .bio-entry__date {
+  font-family: var(--sans);
+  font-size: 10.5px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.045em;
+  color: var(--muted);
+  padding-top: 0.3rem;
+}
+
+.site-main .bio-entry__title {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.site-main .bio-entry__details {
+  margin: 0.25rem 0 0;
 }
