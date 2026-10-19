@@ -30,7 +30,29 @@
     </div>
   </header>
 
-  <main id="main-content" class="site-main">
+  {% comment %}
+    Shared page title banner. Override its title with hero_title in a page's
+    front matter. Remove the old first Markdown # heading to avoid duplication.
+  {% endcomment %}
+  {% assign is_home_page = false %}
+  {% if page.url == '/' or page.path == 'index.md' %}
+    {% assign is_home_page = true %}
+  {% endif %}
+  {% if is_home_page %}
+    {% assign heading = page.hero_title | default: site.title | default: 'Yigon Kim' %}
+  {% else %}
+    {% assign heading = page.hero_title | default: page.title | default: 'Untitled' %}
+  {% endif %}
+
+  {% unless page.hide_hero %}
+  <section class="page-hero" aria-labelledby="page-hero-title">
+    <div class="site-shell page-hero__inner">
+      <h1 class="page-hero__title" id="page-hero-title">{{ heading | escape }}</h1>
+    </div>
+  </section>
+  {% endunless %}
+
+  <main id="main-content" class="site-main{% if page.wide_layout %} site-main--wide{% endif %}">
     {{ content }}
   </main>
 

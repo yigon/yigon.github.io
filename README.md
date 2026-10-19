@@ -1,33 +1,44 @@
-# Yigon Kim — Minimal Monotone Jekyll Theme
+# Full-width Milky Way hero + gray subsection rules
 
-A self-contained minimal styling overlay for `yigon/yigon.github.io`.
+These files update the earlier monotone Jekyll theme for yigon.github.io.
 
-## Design
+## Apply
 
-- Pure white background, near-black type, quiet gray accents, fine divider lines.
-- **EB Garamond**, with Garamond/Baskerville/Georgia fallbacks. The web font is loaded from Google Fonts; the site remains readable without it.
-- Home / Bio / Research desktop navigation with a center-out animated underline on hover, persistent underline on the active page, and accessible keyboard focus.
-- Responsive/mobile header, narrow editorial reading column, comfortable line spacing.
-- No JavaScript required. Respects `prefers-reduced-motion`.
+1. In your repository, copy `_layouts/default.html` and `assets/css/monotone.css` to the same locations. Keep backups of your own edits before replacing anything. The other layout files are included for completeness, but unchanged.
+2. Your uploaded image stays in `/assets/img/220702_MW.jpg`; you do **not** need to copy it into this package. The CSS uses `../img/220702_MW.jpg` because `monotone.css` lives in `/assets/css/`.
+3. In `index.md`, `bio.md`, and `research.md`, **remove the existing leading Markdown H1** (`# ...`) if present. The new layout already renders the page's main title in the photo banner, so keeping both would duplicate the title. Do not remove any H2 subsections (`## ...`).
+4. Give each Markdown page a `title` in YAML front matter (the Home banner uses `site.title` by default). To override any banner title, set `hero_title: "Your heading"`.
+5. Push the updated files to your GitHub Pages repository.
 
-## Apply to a Jekyll repository
+Examples of front matter:
 
-1. Back up or commit your existing theme files (`_layouts/default.html`, `_layouts/page.html`, `_layouts/home.html` if present).
-2. Copy the package's `_layouts/` and `assets/css/monotone.css` to the matching repository paths.
-3. Ensure `index.md`, `bio.md` and `research.md` each have Jekyll YAML front matter, including `layout: default` (or `layout: home` / `layout: page`):
+    ---
+    layout: default
+    title: Research
+    hero_title: Research
+    wide_layout: true
+    ---
 
-   ```yaml
-   ---
-   layout: default
-   ---
-   ```
+    ---
+    layout: default
+    title: Bio
+    ---
 
-   Keep the body of each existing Markdown page unchanged. Any current page front matter should be **edited**, not replaced wholesale.
-4. Jekyll will auto-detect the output URLs of `bio.md` and `research.md` for the menu (including custom `permalink` settings). If your filenames differ, update the `site.pages | where: 'name', ...` lines in `_layouts/default.html`.
-5. Commit and push to GitHub Pages. If you build locally, run `bundle exec jekyll serve` from your repository.
+    ---
+    layout: home
+    title: Home
+    hero_title: Yigon Kim
+    ---
 
-## Important integration caveat
+## How it works
 
-The original repository's raw files could not be fetched for a full compatibility audit. The templates are a **drop-in replacement**, not a line-by-line edit of your current `_layouts` files. They intentionally preserve Markdown body content via `{{ content }}`, but an existing theme's custom layout snippets, JS/CSS integrations, footer links, embeds or metadata may require merging rather than overwriting. Check the existing files first.
+- The common image banner is **outside** the content-width container, so it spans 100% of the viewport. The title aligns with the site's usual margins.
+- `background-size: cover` crops horizontally or vertically as needed. Adjust `background-position: center 53%` to move the crop up/down, and `.page-hero` min-height to change banner height.
+- The dark overlay protects white title legibility on a bright photograph.
+- Thin gray dividers appear **before the second and later top-level H2 headings**, while `.research-card h2` remains exempt to avoid double lines. Adjacent `<section>` blocks also get separators.
+- Desktop research Grid is three columns, tablet two, mobile one (matching your prior request); feel free to keep your own `research-grid` style if you've already customized it.
+- `hide_hero: true` in front matter disables the banner for a page if desired.
 
-The `preview/` folder is a stand-alone **design demonstration**, not a copy of your actual website or actual page text. Open `preview/index.html` in any browser to inspect the look and nav hover animation.
+## Caution
+
+I could not fetch the latest GitHub repository files for a line-by-line compatibility audit. These files are based on the **monotone theme generated earlier in this conversation**, not on a verified copy of your current GitHub commit. Merge changes if you already made additional CSS, front matter, or layout edits. A standalone `hero-and-divider-additions.css` is supplied if you want to append only the new CSS.
