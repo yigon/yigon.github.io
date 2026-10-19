@@ -1,4 +1,4 @@
-## Skillsets
+## Skillsets and Data Capabilitis
 
 <div class="skillsets-list" aria-label="Scientific machine learning and astrophysics skillsets">
   <section class="skillsets-entry" aria-labelledby="skill-astro">
