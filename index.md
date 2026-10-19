@@ -2,7 +2,7 @@
 layout: default
 title: Home
 hero_title: Welcome
-hero_subtitle: "   Yigon's homepage"
+hero_subtitle: Yigon's homepage
 ---
 
 <section class="hero">
