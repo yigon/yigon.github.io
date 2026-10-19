@@ -275,6 +275,14 @@ button, input, textarea, select { font: inherit; }
   text-wrap: balance;
   text-shadow: 0 1px 12px rgba(0, 0, 0, .25);
 }
+.page-hero__subtitle {
+  font-family: "EB Garamond", Garamond, serif;
+  font-size: clamp(1.3rem, 2.6vw, 2rem);
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0.7rem 0 0;
+  opacity: 0.9;
+}
 /* With the banner outside the content, a smaller content top margin looks neat. */
 .site-main { padding-top: clamp(48px, 6vw, 82px); }
 
