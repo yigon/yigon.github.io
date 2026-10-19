@@ -47,7 +47,14 @@
   {% unless page.hide_hero %}
   <section class="page-hero" aria-labelledby="page-hero-title">
     <div class="site-shell page-hero__inner">
-      <h1 class="page-hero__title" id="page-hero-title">{{ heading | escape }}</h1>
+      <h1 class="page-hero__title">
+        {{ heading | escape }}
+      </h1>
+      {% if page.hero_subtitle %}
+        <p class="page-hero__subtitle">
+          {{ page.hero_subtitle | escape }}
+        </p>
+      {% endif %}
     </div>
   </section>
   {% endunless %}
