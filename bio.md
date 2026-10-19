@@ -6,57 +6,153 @@ hero_title: Biography
 
 ## Education
 
-<div class="timeline">
-  <div class="timeline-item">
-    <div class="timeline-date">2015.03 – 2019.02</div>
-    <div><strong>B.Sc.</strong> · Kyungpook National University, Major in Astronomy and Atmospheric Sciences, Minor in Physics</div>
-  </div>
-  <div class="timeline-item">
-    <div class="timeline-date">2019.03 – 2021.02</div>
-    <div><strong>M.Sc.</strong> · Kyungpook National University, Major in Astronomy</div>
-  </div>
-  <div class="timeline-item">
-    <div class="timeline-date">2024.03 – present</div>
-    <div><strong>Ph.D.</strong> · Seoul National University, Major in Astronomy, ExgalCos Team</div>
-  </div>
+<div class="bio-list">
+  <article class="bio-entry">
+    <div class="bio-entry__date">Mar 2015 – Feb 2019</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">B.Sc. · Kyungpook National University</h3>
+      <p class="bio-entry__details">Major in Astronomy and Atmospheric Sciences · Minor in Physics</p>
+    </div>
+  </article>
+  <article class="bio-entry">
+    <div class="bio-entry__date">Mar 2019 – Feb 2021</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">M.Sc. · Kyungpook National University</h3>
+      <p class="bio-entry__details">Major in Astronomy</p>
+    </div>
+  </article>
+  <article class="bio-entry">
+    <div class="bio-entry__date">Mar 2024 – Present</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">Ph.D. · Seoul National University</h3>
+      <p class="bio-entry__details">Major in Astronomy · ExgalCos Team</p>
+    </div>
+  </article>
 </div>
 
-## Academic positions
+## Academic Positions
 
-<div class="timeline">
-  <div class="timeline-item">
-    <div class="timeline-date">2017.09 – 2019.02</div>
-    <div>Undergraduate intern · KNU Cosmology Team</div>
-  </div>
-  <div class="timeline-item">
-    <div class="timeline-date">2020.09 – 2020.10</div>
-    <div>Visitor researcher · Korea Astronomy and Space Science Institute (KASI)</div>
-  </div>
-  <div class="timeline-item">
-    <div class="timeline-date">2022.09 – 2023.12</div>
-    <div>Researcher · KNU SPHEREx Basic Research Lab, funded by NRF</div>
-  </div>
+<div class="bio-list">
+  <article class="bio-entry">
+    <div class="bio-entry__date">Sep 2017 – Feb 2019</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">Undergraduate Intern</h3>
+      <p class="bio-entry__details">KNU Cosmology Team</p>
+    </div>
+  </article>
+  <article class="bio-entry">
+    <div class="bio-entry__date">Sep 2020 – Oct 2020</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">Visiting Researcher</h3>
+      <p class="bio-entry__details">Korea Astronomy and Space Science Institute (KASI)</p>
+    </div>
+  </article>
+  <article class="bio-entry">
+    <div class="bio-entry__date">Sep 2022 – Dec 2023</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">Researcher</h3>
+      <p class="bio-entry__details">KNU SPHEREx Basic Research Lab (funded by NRF)</p>
+    </div>
+  </article>
 </div>
 
-## Scholarships and grants
+## Scholarships and Grants
 
-<div class="timeline compact">
-  <div class="timeline-item"><div class="timeline-date">2015.03 – 2018.08</div><div>Merit scholarships · KNU</div></div>
-  <div class="timeline-item"><div class="timeline-date">2024.03 – 2024.08</div><div>BK21 fellowship · SNU</div></div>
-  <div class="timeline-item"><div class="timeline-date">2024.08</div><div>Merit scholarship · SNU</div></div>
-  <div class="timeline-item"><div class="timeline-date">2025.02</div><div>Merit scholarship · SNU</div></div>
-  <div class="timeline-item"><div class="timeline-date">2025.03 – 2025.08</div><div>BK21 fellowship · SNU</div></div>
-  <div class="timeline-item"><div class="timeline-date">2026.03 – 2027.02</div><div>Support for next generation academics · SNU</div></div>
+<div class="bio-list">
+  <article class="bio-entry">
+    <div class="bio-entry__date">Mar 2015 – Aug 2018</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">Merit Scholarships</h3>
+      <p class="bio-entry__details">KNU</p>
+    </div>
+  </article>
+  <article class="bio-entry">
+    <div class="bio-entry__date">Mar 2024 – Aug 2024</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">BK21 Fellowship</h3>
+      <p class="bio-entry__details">SNU</p>
+    </div>
+  </article>
+  <article class="bio-entry">
+    <div class="bio-entry__date">Aug 2024</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">Merit Scholarship</h3>
+      <p class="bio-entry__details">SNU</p>
+    </div>
+  </article>
+  <article class="bio-entry">
+    <div class="bio-entry__date">Feb 2025</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">Merit Scholarship</h3>
+      <p class="bio-entry__details">SNU</p>
+    </div>
+  </article>
+  <article class="bio-entry">
+    <div class="bio-entry__date">Mar 2025 – Aug 2025</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">BK21 Fellowship</h3>
+      <p class="bio-entry__details">SNU</p>
+    </div>
+  </article>
+  <article class="bio-entry">
+    <div class="bio-entry__date">Mar 2026 – Feb 2027</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">Support for Next-Generation Academics</h3>
+      <p class="bio-entry__details">SNU</p>
+    </div>
+  </article>
 </div>
 
-## Etc.
+## Service and Activities
 
-<div class="timeline compact">
-  <div class="timeline-item"><div class="timeline-date">2016.02 – 2017.02</div><div>Executive · KNU Department of Astronomy and Atmospheric Sciences student's union</div></div>
-  <div class="timeline-item"><div class="timeline-date">2017.02 – 2018.02</div><div>Group leader · DAAS amateur astronomy group</div></div>
-  <div class="timeline-item"><div class="timeline-date">2017.10 – present</div><div>Member · Korean Astronomical Society</div></div>
-  <div class="timeline-item"><div class="timeline-date">2019.05 – 2020.05</div><div>Executive · Korean Young Astronomers Meeting</div></div>
-  <div class="timeline-item"><div class="timeline-date">2025.03 – present</div><div>GPU server manager · SNU ExgalCos team</div></div>
-  <div class="timeline-item"><div class="timeline-date">2025.03 – 2026.02</div><div>Graduate student representative · SNU astronomy program</div></div>
-  <div class="timeline-item"><div class="timeline-date">2026.03 – present</div><div>CPU server manager · SNU ExgalCos team</div></div>
+<div class="bio-list">
+  <article class="bio-entry">
+    <div class="bio-entry__date">Feb 2016 – Feb 2017</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">Executive</h3>
+      <p class="bio-entry__details">KNU Department of Astronomy and Atmospheric Sciences Students’ Union</p>
+    </div>
+  </article>
+  <article class="bio-entry">
+    <div class="bio-entry__date">Feb 2017 – Feb 2018</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">Group Leader</h3>
+      <p class="bio-entry__details">DAAS Amateur Astronomy Group</p>
+    </div>
+  </article>
+  <article class="bio-entry">
+    <div class="bio-entry__date">Oct 2017 – Present</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">Member</h3>
+      <p class="bio-entry__details">Korean Astronomical Society</p>
+    </div>
+  </article>
+  <article class="bio-entry">
+    <div class="bio-entry__date">May 2019 – May 2020</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">Executive</h3>
+      <p class="bio-entry__details">Korean Young Astronomers Meeting</p>
+    </div>
+  </article>
+  <article class="bio-entry">
+    <div class="bio-entry__date">Mar 2025 – Present</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">GPU Server Manager</h3>
+      <p class="bio-entry__details">SNU ExgalCos Team</p>
+    </div>
+  </article>
+  <article class="bio-entry">
+    <div class="bio-entry__date">Mar 2025 – Feb 2026</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">Graduate Student Representative</h3>
+      <p class="bio-entry__details">SNU Astronomy Program</p>
+    </div>
+  </article>
+  <article class="bio-entry">
+    <div class="bio-entry__date">Mar 2026 – Present</div>
+    <div class="bio-entry__content">
+      <h3 class="bio-entry__title">CPU Server Manager</h3>
+      <p class="bio-entry__details">SNU ExgalCos Team</p>
+    </div>
+  </article>
 </div>
