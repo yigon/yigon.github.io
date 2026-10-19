@@ -35,7 +35,7 @@ hero_subtitle: Yigon's homepage
   </div>
   <div class="info-card">
     <strong>Interests</strong>
-    <span>Photography, amateur astronomy</span>
+    <span>Photography, Amateur Astronomy</span>
   </div>
 </div>
 
