@@ -40,7 +40,7 @@ Click on each image to see details.
   </a>
 </div>
 
-## Skillsets
+## Skills and Data Capabilities
 
 <div class="skillsets-list" aria-label="Scientific machine learning and astrophysics skillsets">
   <section class="skillsets-entry" aria-labelledby="skill-astro">
