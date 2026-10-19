@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Bio
+hero_title: Biography
 ---
-
-# Biography
 
 ## Education
 
